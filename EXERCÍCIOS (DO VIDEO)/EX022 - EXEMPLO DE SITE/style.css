@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-attachment: fixed;
+    background-image: linear-gradient(to right, #ECE9E4, #E7CABA);
+}
+
+p{
+    text-align: justify;
+}
+
+main{
+    background-color: white; /* Cor do fundo. No caso, do seletor */
+    width: 600px; /* Largura do seletor main*/
+    padding: 10px; /* Espaçamento da borda do texto */
+    margin: auto; /* Colocar texto centralizado, por exemplo */
+    border-radius: 10px; /* Arredondar a borda do contraste entre fundo da pagina e fundo do texto */
+    box-shadow: 50px 50px 20px #E7CABA; /* Efeito de sobra no seletor */
+}
+
+h1 {
+    color: #404040; /*  Cor da letra */
+    text-align: center;
+    text-shadow: 1px 1px 2px #272727c5;
+}
+
+h2 {
+    color: #A08268;
+}

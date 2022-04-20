@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: darkgrey;
+            
+        }
+        header{
+            background-color:rgb(199, 197, 197);
+            padding: 10px;
+            
+        }
+
+        nav{
+            background-color: rgb(75, 74, 74);
+            padding: 3px;
+            box-shadow: 5px 3px 7px 1px rgba(0, 0, 0, 0.356);
+        }
+
+        nav > a {
+            text-decoration: none;
+            font-weight: lighter;
+            color: white;
+            margin-right: 50px;
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+            color: brown;
+        }
+        main {
+            background-color: white;
+            padding: 10px;
+        }
+
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 5px;
+            margin: 0px;
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+
+        article{
+            background-color: gray;
+            margin: 0px;
+            padding: 10px;
+        }
+
+        article > aside {
+            background-color: rgb(88, 88, 88);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>Esportes Poítica Tecnologia</p>
+
+        </section>
+        <section id="notícias">
+            <article>
+                <h2>Notícias sobre o BR</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus est repellat aliquid nobis incidunt dolor ipsum asperiores? Reiciendis, aliquam similique ex odit iusto nihil suscipit, omnis voluptate tenetur delectus atque!</p>
+                <aside>
+                    <p>Artigo escrito por José da Silva</p>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido pelo Curso em Video</p>
+    </footer>
+</body>
+</html>
