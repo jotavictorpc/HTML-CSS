@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratica</title>
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap');
+
+        header {
+            background-color: rgba(0, 0, 0, 0.473);
+            color: white;
+            height: 60px;
+        }
+
+        header .logo {
+            max-width: 150px;
+        }
+
+        header .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 100%;
+        }
+
+        header a {
+            text-decoration: none;
+            color: white;
+            margin: 14px;
+        }
+
+        section.hero {
+            background-image: url("imagens/cachorro1.png");
+            background-size: cover;
+            height: 550px;
+        }
+
+        section.hero .container .hero-content p {
+            margin: 8px 0px;
+            font-size: 2em;
+        }
+        section.hero .container .hero-content h2 {
+            font-size: 4em;
+            font-family:'Playfair Display', serif;;
+        }
+
+        section.hero .container .hero-content {
+            color: white;
+            background-color: rgba(0, 0, 0, 0.315);
+            border-radius: 15px;
+            padding: 8px;
+        }
+
+        section.hero .container {
+            display: flex;
+            height: 100%;
+            align-items: center;
+        }
+
+        section.final .container {
+            text-align: center;
+            align-content: center;
+            height: 50px;
+        }
+
+        footer {
+            background-color: aqua;
+        }
+
+        section.final .container .final-content p {
+            font-size: 1.5em;
+        }
+
+        .container { /* Container geral da página*/
+            display: grid;
+            width: 100%;
+            max-width: 1180px;
+            margin: auto;
+            border: 1px solid yellow;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="#" class="logo">Logo</a>
+            <nav>
+                <a href="#">Sobre nós</a>
+                <a href="#">Contato</a>
+                <a href="#">Localização</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h2>Conheça a nossa loja de cachorro</h2>
+                    <p>Aqui, você encontra todos os tipos de cachorro</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="final">
+            <div class="container">
+                <div class="final-content">
+                    <p>Site criado por J Victor Pessoa Cavalcante</p>
+                </div>
+            </div>
+        </section>
+    </footer>
+</body>
+</html>
