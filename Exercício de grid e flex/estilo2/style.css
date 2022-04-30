@@ -55,3 +55,7 @@ img {
     grid-row: 2/5;
     display: block;
 }
+
+footer {
+    margin-bottom: 200px;
+}
