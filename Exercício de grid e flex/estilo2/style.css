@@ -4,7 +4,14 @@
     box-sizing: border-box;
 }
 
-.container {
+img {
+    width: 100%;
+}
+
+.container { /* Container geral*/
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4. 1fr);
     width: 100%;
     max-width: 1180px;
     border: 1px solid yellow;
@@ -29,36 +36,48 @@
 
 main .container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4. 1fr);
     margin: auto;
     grid-gap: 20px;
+    text-align: center;
+    
 }
 
 main .container img {
     max-width: 350px;
     margin: auto;
     margin-top: 100px;
+    border: 2px solid black;
 }
 
 main .container div:nth-child(n + 4) {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-gap: 10px;
     align-items: center;
-    justify-self: start;
+    
+}
+
+main .container div:nth-child(n + 4) p {
+    margin: auto;
+    background-color: brown;
 }
 
 main .container div:nth-child(n + 4) img {
     max-width: 280px;
+    background-size: cover;
     border: 2px solid black;
 }
 
 main .container div.anuncio {
     grid-column: 1;
     grid-row: 2 / 5;
-    display: block;
     margin: auto;
+}
+
+footer .container {
+    display: grid;
+    height: 100px;
+    background-color: aqua;
 }
 
 /* Falta a responsividade*/
