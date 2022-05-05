@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Formulário de apresentação do futuro funcionário</h1>
+    <form action="mailto:joao.vicctorpc@hotmail.com"> <!--Todo os dados vao ser enviado para esse email-->
+        <fieldset id="usuario">
+            <legend>Identificação do usuário</legend>
+                <p><label for="cnome">Nome:</label> <input type="text" name="tnome" id="cnome" size="30" maxlength="40" placeholder="Nome Completo"></p>
+
+                <p><label for="csenha">Senha:</label> <input type="password" name="tsenha" id="csenha" size="30" maxlength="8" placeholder="Senha"></p>
+
+                <p><label for="cmail">E-mail:</label> <input type="email" name="tmail" id="cmail" maxlength="40" size="30" placeholder="E-mail"></p>
+
+                <fieldset id="sexo">
+                    <legend>Sexo</legend>
+                        <input type="radio" name="tsexo" id="cmasc"> <label for="cmasc">Masculino</label>
+                        <input type="radio" name="tsexo" id="cfem"> <label for="cfem">Feminino</label>
+                </fieldset>
+
+                <p><label for="cnasc">Data de nascimento:</label> <input type="date" name="tnasc" id="cnasc"></p> 
+
+        </fieldset>
+
+        <fieldset id="endereco">
+            
+            <legend>Endereço do usuário</legend>
+                <p><label for="cend">Logradouro: </label><input type="text" name="tend" id="cend" size="30" maxlength="40" placeholder="Endereço"></p>
+
+                <p><label for="cnum">Número:</label> <input type="number" name="tnum" id="cnum" placeholder="Número" min="0" max="99999"></p>
+                
+                <p><label for="cestado">Estado:</label> 
+                <select name="testado" id="cestado">
+                    <optgroup label="Região 1">
+                        <option value="SP">São Paulo</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="SC">Santa Catarina</option>
+                    </optgroup>
+                    <optgroup label="Região 2">
+                        <option value="AL">Alagoas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="PB">Paraiba</option>
+                    </optgroup>
+                </select>
+                </p>
+
+                <p>Cidade: <input type="text" name="tcidade" id="ccidade" maxlength="40" size="20" placeholder="Sua cidade" list="cidade"></p>
+                <datalist id="cidade">
+                    <option value="Rio de Janeiro">Rio de Janeiro</option>
+                    <option value="Jaguaribara">Jaguaribara</option>
+                    <option value="Delmiro Gouveia">Delmiro Gouveia</option>
+                    <option value="Maceió">Maceió</option>
+                </datalist>
+
+        </fieldset>
+
+        <fieldset id="msg">
+
+            <legend>Mensagem do usuário</legend>
+                <p><label for="curg">Grau de urgência: </label>Min<input type="range" name="turg" id="curg" min="0" max="10" step="2">Max</p> 
+
+                <p>Mensagem: <textarea name="tmsga" id="cmsga" cols="30" rows="5" placeholder="Deixe sua mensagem"></textarea></p>
+
+        </fieldset>
+
+        <fieldset id="mais-sobre">
+
+            <legend>Quero um Google Glass</legend>
+                <p>Gostaria de adquirir um Google Glass quando possível</p>
+
+                <p>Cor: <input type="text" name="tcor" id="ccor" size="30" maxlength="40"></p>
+
+                <p>Quantidade: <input type="number" name="tquant" id="cquant" min="0" max="9999"></p>
+
+                <p>Preço Total R$: <input type="number" name="tpreco" id="cpreco" size="30" min="0" max="99999999"></p>
+
+        </fieldset>
+    </form>
+</body>
+</html>
