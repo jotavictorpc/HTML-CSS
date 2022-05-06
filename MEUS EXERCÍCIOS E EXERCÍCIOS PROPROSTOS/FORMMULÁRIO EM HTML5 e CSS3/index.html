@@ -31,9 +31,9 @@
         <fieldset id="endereco">
 
             <legend>Endereço do usuário</legend>
-                <p><label for="cend">Logradouro: </label><input type="text" name="tend" id="cend" size="30" maxlength="40" placeholder="Endereço"></p>
+                <p><label for="cend">Logradouro: </label><input type="text" name="tend" id="cend" class="userinput" size="30" maxlength="40" placeholder="Endereço"></p>
 
-                <p><label for="cnum">Número:</label> <input type="number" name="tnum" id="cnum" placeholder="Número" min="0" max="99999"></p>
+                <p><label for="cnum">Número:</label> <input type="number" name="tnum" id="cnum" class="userinput" placeholder="Número" min="0" max="99999"></p>
                 
                 <p><label for="cestado">Estado:</label> 
                 <select name="testado" id="cestado">
@@ -50,7 +50,7 @@
                 </select>
                 </p>
 
-                <p>Cidade: <input type="text" name="tcidade" id="ccidade" maxlength="40" size="20" placeholder="Sua cidade" list="cidade"></p>
+                <p>Cidade: <input type="text" name="tcidade" id="ccidade" class="userinput" maxlength="40" size="20" placeholder="Sua cidade" list="cidade"></p>
                 <datalist id="cidade">
                     <option value="Rio de Janeiro">Rio de Janeiro</option>
                     <option value="Jaguaribara">Jaguaribara</option>
@@ -63,9 +63,9 @@
         <fieldset id="msg">
 
             <legend>Mensagem do usuário</legend>
-                <p><label for="curg">Grau de urgência: </label>Min<input type="range" name="turg" id="curg" min="0" max="10" step="2">Max</p> 
+                <p><label for="curg">Grau de urgência: </label>Min<input type="range" name="turg" id="curg" class="userinput" min="0" max="10" step="2">Max</p> 
 
-                <p>Mensagem: <textarea name="tmsga" id="cmsga" cols="30" rows="5" placeholder="Deixe sua mensagem"></textarea></p>
+                <p>Mensagem: <textarea name="tmsga" id="cmsga" class="userinput" cols="30" rows="5" placeholder="Deixe sua mensagem"></textarea></p>
 
         </fieldset>
 
@@ -74,11 +74,11 @@
             <legend>Quero um Google Glass</legend>
                 <p>Gostaria de adquirir um Google Glass quando possível</p>
 
-                <p>Cor: <input type="text" name="tcor" id="ccor" size="30" maxlength="40"></p>
+                <p>Cor: <input type="text" name="tcor" id="ccor" class="userinput" size="30" maxlength="40"></p>
 
-                <p>Quantidade: <input type="number" name="tquant" id="cquant" min="0" max="9999"></p>
+                <p>Quantidade: <input type="number" name="tquant" id="cquant" class="userinput" min="0" max="9999"></p>
 
-                <p>Preço Total R$: <input type="number" name="tpreco" id="cpreco" size="30" min="0" max="99999999"></p>
+                <p>Preço Total R$: <input type="number" name="tpreco" id="cpreco" class="userinput" size="30" min="0" max="99999999"></p>
         </fieldset>
 
         <button type="submit" name="tbotao" id="cbotao">Concluido...</button>
