@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="container">
+        <section class="form-img">
+            <img src="undraw_Shopping_re_hdd9.png" alt="Mulher comprando">
+        </section>
+        <form action="#">
+            <header class="form-header">
+                <div class="form-header-titulo">
+                    <h1>Cadastra-se</h1>
+                </div>
+                <div class="form-header-botao">
+                    <button><a href="#">Entrar</a></button>
+                </div>
+            </header>
+            <section class="input-user"> 
+                <div class="input-box">
+                    <label for="cprinome">Primeiro nome</label>
+                    <input type="text" name="tprinome" id="cprinome" placeholder="Primeiro nome" required>
+                </div>
+                <div class="input-box">
+                    <label for="csegnome">Segundo nome</label>
+                    <input type="text" name="tsegnome" id="csegnome" placeholder="Segundo nome" required>
+                </div>
+                <div class="input-box">
+                    <label for="cmail">E-mail</label>
+                    <input type="email" name="tmail" id="cmail" placeholder="Digite seu e-mail">
+                </div>
+                <div class="input-box">
+                    <label for="ctel">Celular</label>
+                    <input type="tel" name="ttel" id="ctel" placeholder="(xx) x.xxxx - xxxx">
+                </div>
+                <div class="input-box">
+                    <label for="csenha">Senha:</label>
+                    <input type="number" name="tsenha" id="csenha" placeholder="Senha" min="0" max="9999">
+                </div>
+                <div class="input-box">
+                    <label for="csenhaconf">Confirme a senha</label>
+                    <input type="number" name="tsenhaconf" id="csenhaconf" placeholder="Confirmar senha" min="0" max="9999">
+                </div>
+            </section>
+            <section class="radio-input">
+                <div class="radio-input-titulo">
+                    <h6><label for="sexo">Gênero</label></h6>
+                </div>
+                <div class="radio-input-bolas">
+                    <div>
+                        <input type="radio" name="sexo" id="cfem">
+                        <label for="cfem">Feminino</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="sexo" id="cmasc">
+                        <label for="cmasc">Masculino</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="sexo" id="coutro">
+                        <label for="coutro">Outro</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="sexo" id="cnao">
+                        <label for="cnao">Prefiro não dizer</label>
+                    </div>
+                </div>
+            </section>
+            <button class="form-botao">
+                <a href="#">Continuar</a>
+            </button>
+        </form>
+    </section>
+</body>
+</html>
