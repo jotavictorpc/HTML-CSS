@@ -10,42 +10,43 @@
 <body>
     <section class="container">
         <section class="form-img">
-            <div><img src="undraw_Shopping_re_hdd9.png" alt="Mulher comprando">
+            <div>
+                <img class="form-imagem" src="undraw_Shopping_re_hdd9.png" alt="Mulher comprando">
             </div>
         </section>
         <form action="#">
             <header class="form-header">
                 <div class="form-header-titulo">
-                    <h1>Cadastra-se</h1>
+                    <h1>Cadastre-se</h1>
                 </div>
                 <div class="form-header-botao">
-                    <button><a href="#">Entrar</a></button>
+                    <button class="botao-entrar"><a href="#">Entrar</a></button>
                 </div>
             </header>
             <section class="input-user"> 
                 <div class="input-box">
                     <label for="cprinome">Primeiro nome</label>
-                    <input type="text" name="tprinome" id="cprinome" placeholder="Primeiro nome" required>
+                    <input type="text" name="tprinome" id="cprinome" placeholder="Primeiro nome" class="caixa-input" required>
                 </div>
                 <div class="input-box">
                     <label for="csegnome">Segundo nome</label>
-                    <input type="text" name="tsegnome" id="csegnome" placeholder="Segundo nome" required>
+                    <input type="text" name="tsegnome" id="csegnome" placeholder="Segundo nome" class="caixa-input" required>
                 </div>
                 <div class="input-box">
                     <label for="cmail">E-mail</label>
-                    <input type="email" name="tmail" id="cmail" placeholder="Digite seu e-mail">
+                    <input type="email" name="tmail" id="cmail" placeholder="Digite seu e-mail" class="caixa-input">
                 </div>
                 <div class="input-box">
                     <label for="ctel">Celular</label>
-                    <input type="tel" name="ttel" id="ctel" placeholder="(xx) x.xxxx - xxxx">
+                    <input type="tel" name="ttel" id="ctel" placeholder="(xx) x.xxxx - xxxx" class="caixa-input">
                 </div>
                 <div class="input-box">
                     <label for="csenha">Senha:</label>
-                    <input type="number" name="tsenha" id="csenha" placeholder="Senha" min="0" max="9999">
+                    <input type="password" name="tsenha" id="csenha" placeholder="Senha" class="caixa-input">
                 </div>
                 <div class="input-box">
                     <label for="csenhaconf">Confirme a senha</label>
-                    <input type="number" name="tsenhaconf" id="csenhaconf" placeholder="Confirmar senha" min="0" max="9999">
+                    <input type="password" name="tsenhaconf" id="csenhaconf" placeholder="Confirmar senha" class="caixa-input">
                 </div>
             </section>
             <section class="radio-input">
@@ -71,7 +72,7 @@
                     </div>
                 </div>
             </section>
-            <button class="form-botao">
+            <button class="form-botao" type="submit">
                 <a href="#">Continuar</a>
             </button>
         </form>
