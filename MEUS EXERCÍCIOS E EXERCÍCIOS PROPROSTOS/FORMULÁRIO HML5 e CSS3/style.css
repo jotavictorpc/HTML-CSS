@@ -29,7 +29,7 @@ body {
     justify-content: center;
     align-items: center;
     background-color: rgba(128, 128, 128, 0.473);
-    width: 50%;
+    width: 50%; /*Largura será 50% da largura do container pai, no caso o "container". = 540px*/
 }
 
 .form-imagem {
@@ -67,12 +67,12 @@ form {
 
 .caixa-input {
     width: 250px;
-    outline: none;
+    outline: none; /*Tirar a borda quando o cursor estiver em cima da caixa.*/
     border: none;
     border-bottom: 1px solid gray;
     background-color:white;
     margin-top: 2px;
-    letter-spacing: 1px;
+    letter-spacing: 1px; /*Espaçamento das letras dentro da caixa*/
 }
 
 .caixa-input:hover {
@@ -122,14 +122,14 @@ a {
     padding: 5px;
     border: none;
     border-radius: 5px;
-    cursor: pointer;
+    cursor: pointer; /*Quando o cursor estiver em cima do botão, aparecer a maozinha*/
 }
 
 .botao-entrar:hover {
     background-color: rgb(82, 82, 82);
 }
 
-.form-header-titulo h1::after {
+.form-header-titulo h1::after { /*Colocar a barra em baixo do "Cadastre-se"*/
     content: "";
     display: block;
     width: 100px;
