@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anki - cards</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form class="form" action="#">
+        <fieldset class="form-entorno">
+            <legend class="form-entorno-titulo">Formulário de Clientes</legend>
+            <section class="fomr-entorno-userinput">
+                <div>
+                    <label for="cnome" class="caixa-label">Nome completo</label>
+                    <input type="text" name="tnome" id="cnome" placeholder="Digite seu nome completo" class="caixa-input" required>
+                </div>
+                <div>
+                    <label for="cmail" class="caixa-label">E-mail</label>
+                    <input type="email" name="tmail" id="cmail" placeholder="Digite seu E-mail" class="caixa-input" required>
+                </div>
+                <div>
+                    <label for="ctel" class="caixa-label">Telefone</label>
+                    <input type="tel" name="ttel" id="ctel" placeholder="(xx) x.xxxx - xxxx" class="caixa-input" required>
+                </div>
+            </section>
+
+            <section class="form-entorno-genero">
+                <div class="titulo-genero">
+                    <p>Sexo</p>
+                </div>
+                <div>
+                    <input type="radio" name="sexo" id="cfem">
+                    <label for="cfem" >Feminino</label>
+                </div>
+                <div>
+                    <input type="radio" name="sexo" id="cmasc">
+                    <label for="cmasc">Masculino</label>
+                </div>
+                <div>
+                    <input type="radio" name="sexo" id="coutro">
+                    <label for="coutro">Outro</label>
+                </div>
+            </section>
+
+            <section class="form-entorno-data">
+                <div>
+                    <label for="cdata" class="caixa-label">Data de nascimento</label>
+                    <input type="date" name="tdata" id="cdata" class="caixa-input">
+                </div>
+            </section>
+
+            <section class="form-entorno-end">
+                <div class="form-entorno-mais">
+                    <label for="ccidade" class="caixa-label">Cidade</label>
+                    <input type="text" name="tcidade" id="ccidade" placeholder="Digite sua cidade" class="caixa-input">
+                </div>
+                <div class="form-entorno-mais">
+                    <label for="cest" class="caixa-label">Estado</label>
+                    <select name="test" id="cest" class="caixa-input">
+                        <option value="BA">Bahia</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="CE">Ceará</option>
+                        <option value="Selecione..."  selected disabled>Selecione...</option>
+                    </select>
+                </div>
+                <div class="form-entorno-mais-fim">
+                    <label for="cend" class="caixa-label">Endereço</label>
+                    <input type="text" name="tend" id="cend" placeholder="Av, Travessa, rua ..." class="caixa-input">
+                </div>
+            </section>
+            <section>
+                <div>
+                    <button type="submit">Enviar</button>
+                </div>
+            </section>
+        </fieldset>
+    </form>
+</body>
+</html>
