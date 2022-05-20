@@ -1,0 +1,153 @@
+@charset "UTF-8";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: gray;
+}
+
+.container {
+    height: 100%;
+    width: 1080px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.lado-esq {
+    background-color:lightgray;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.imagem img {
+    max-width: 500px;
+}
+
+/*Configuração lado direito*/
+
+.lado-dir {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+/*Configuração da cabeça abaixo*/
+
+.cabeca {
+    display: flex;
+    flex-direction: row;
+    margin-top: 90px;
+    margin-bottom: 40px;
+    justify-content: space-between;
+    padding: 0px 10px;
+}
+
+.cabeca-texto-h1 {
+    border-bottom: 1px solid gray;
+}
+
+.cabeca-texto-botao button {
+    border-radius: 20px;
+    padding: 10px;
+    width: 100px;
+    border: 1px solid gray;
+    background-color: rgba(128, 128, 128, 0.562);
+}
+
+.cabeca-texto-botao button:hover {
+    background-color: gray;
+}
+
+.cabeca-texto-botao a {
+    text-decoration: none;
+    color: white;
+}
+
+/*Configuração do formulario*/
+
+.formulario {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 15px;
+    margin-bottom: 30px;
+}
+
+.input-user { /*Campo que o usuário vai digitar*/
+    width: 250px;
+    border: none;
+    padding: 10px;
+    outline: none;
+    border-bottom: 1px solid gray;
+    letter-spacing: 1px;
+    margin-left: 4px;
+}
+
+.formulario-individ-completo label {
+    padding-left: 5px;
+}
+
+
+
+/* Configuração dos botoes de radio*/
+
+.botoes-radio {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px 10px 50px 10px;
+}
+
+.radio-titulo {
+    margin-left: 10px;
+    
+}
+
+.radio-titulo p {
+    border-bottom: 1px solid gray;
+    width: 30px;
+}
+
+
+
+
+
+
+
+/*Configuração do botao continuar-fim*/
+
+.botao-fim {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.botao-fim button {
+    width: 300px;
+    padding: 10px;
+    border-radius: 20px;
+    border: 1px solid gray;
+    background-color: rgba(128, 128, 128, 0.562);
+}
+
+.botao-fim button:hover {
+    background-color: gray;
+}
+
+.botao-fim a {
+    text-decoration: none;
+    color: white;
+}

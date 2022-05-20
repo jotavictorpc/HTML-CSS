@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anki - cards</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="container">
+        <section class="lado-esq">
+            <picture class="imagem">
+                <img src="undraw_contrast_re_hc7k.svg" alt="Compras">
+            </picture>
+        </section>
+        <section class="lado-dir">
+            <header class="cabeca">
+                <div class="cabeca-texto-h1">
+                    <h1>Cadastre-se</h1>
+                </div>
+                <div class="cabeca-texto-botao">
+                    <button><a href="#">Entrar</a></button>
+                </div>
+            </header>
+            <form action="#" class="formulario">
+                <div class="formulario-individ-completo">
+                    <label for="">Primeiro Nome</label>
+                    <input type="text" name="tnome" id="cnome" placeholder="Digite seu nome" class="input-user" required>
+                </div>
+                <div class="formulario-individ-completo">
+                    <label for="">Segundo Nome</label>
+                    <input type="text" name="tsegnome" id="csegnome" placeholder="Digite seu segundo nome" class="input-user" required>
+                </div>
+                <div class="formulario-individ-completo">
+                    <label for="">E-mail</label>
+                    <input type="email" name="tmail" id="cmail" placeholder="E-mail" class="input-user" required>
+                </div>
+                <div class="formulario-individ-completo">
+                    <label for="">Celular</label>
+                    <input type="tel" name="ttel" id="ctel" placeholder="(xx) x.xxxx - xxxx" class="input-user">
+                </div>
+                <div class="formulario-individ-completo">
+                    <label for="">Senha</label>
+                    <input type="password" name="tsenha" id="csenha" placeholder="Digite sua senha" class="input-user">
+                </div>
+                <div class="formulario-individ-completo">
+                    <label for="">Confirme sua senha</label>
+                    <input type="password" name="tsenhaconf" id="csenhaconf" placeholder="Confirme sua senha" class="input-user">
+                </div>
+            </form>
+            <div class="radio">
+                <section class="radio-titulo"> 
+                    <p>Gênero</p>
+                </section>
+
+                <section class="botoes-radio">
+                    <div>
+                        <input type="radio" name="sexo" id="cfem">
+                        <label for="cfem">Feminino</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" name="sexo" id="cmasc">
+                        <label for="cmasc">Masculino</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="sexo" id="coutro">
+                        <label for="coutro">Outro</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="sexo" id="cnao">
+                        <label for="cnao">Prefiro não dizer</label>
+                    </div>
+                </section>
+            </div>
+            <div class="botao-fim">
+                <button><a href="#">Continuar</a></button>
+            </div>
+        </section>
+    </section>
+</body>
+</html>
