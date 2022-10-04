@@ -1,2 +1,81 @@
+/* Versao mobile first */
+
 @charset "utf-8";
 
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+body, html {
+    background-color: lightgray;
+}
+
+header {
+    background-color: gray;
+}
+
+header h1 {
+    padding: 10px;
+    text-align: center;
+}
+
+header menu {
+    display: none;
+}
+
+header #burguer {
+    background-color: rgb(83, 82, 82);
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+header #burguer:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+header menu ul {
+    list-style: none;
+}
+
+header menu ul li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    background-color: rgb(85, 84, 84);
+    color: white;
+    text-align: center;
+    border: 1px solid gray;
+}
+
+header menu ul li a:hover {
+    background-color: rgba(128, 128, 128, 0.479);
+}
+
+
+
+
+main {
+    width: 90vw;
+    background-color: white;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+main article h2 {
+    padding-bottom: 20px;
+
+}
+
+main article p {
+    text-align: justify;
+    margin-bottom: 20px;
+    text-indent: 20px;
+}
